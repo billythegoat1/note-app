@@ -1,5 +1,8 @@
-import { notes } from "@/lib/data"
-import NoteCard from "../../components/NoteCard"
+// app/page.js
+import { notes } from "../../lib/data";
+import NoteCard from "../../components/NoteCard";
+
+export const dynamic = "force-dynamic"; // this ensures server always reads fresh data
 
 export default function Home() {
   return (
